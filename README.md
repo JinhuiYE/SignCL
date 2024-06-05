@@ -15,15 +15,16 @@ To use `SignCL`, ensure you have the following dependencies installed:
 - Other standard libraries (e.g., random, numpy)
 
 ## Usage
-Here's a step-by-step guide on how to integrate SignCL into your sign language translation model.
-
+Here's a step-by-step guide to integrating SignCL into your sign language translation model.
+```bash
 0. cl_criterion = SignCL()
 1. frames_feature = model.encoder(src_input)
 2. margin = min(20, max(10, int(num_frames // text_length * 2.3)))
 3. cl_loss = cl_criterion(frames_feature, margin=margin)
 4. total_loss = lambda_ * cl_loss + original_loss
+```
 
-### `A. usage_example.py`:
+### A. Usage example in your framework:
 
 ```python
 import torch
@@ -47,7 +48,7 @@ for epoch in range(num_epochs):
         frames_feature = model.encoder(src_input)
         num_frames = frames_feature.size(1)
         text_length = len(text_input)  # Assuming text_input is the corresponding text
-        margin = min(20, max(10, int(num_frames // text_length * 2.3)))
+        margin = min(20, max(10, int(num_frames // text_length * 2.3))*2)
         
         cl_loss = cl_criterion(frames_feature, margin=margin)
         original_loss = ...  # Compute your original loss here
@@ -63,7 +64,7 @@ for epoch in range(num_epochs):
 
 ```
 
-### `B. example in GFSLT-VLP`:
+### B. Example for GFSLT-VLP:
 coming soon ***** 
 
 
