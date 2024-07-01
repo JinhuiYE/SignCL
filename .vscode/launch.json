@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run SignCL",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/examples/GFSLT-VLP/train_vlp_SignCL.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/examples/GFSLT-VLP",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0,1"
+            },
+            "args": [
+                "-m",
+                "torch.distributed.launch",
+                "--nproc_per_node=2",
+                "--master_port=1236",
+                "--use_env",
+                "train_vlp_SignCL.py",
+                "--batch-size", "4",
+                "--epochs", "80",
+                "--opt", "sgd",
+                "--lr", "0.01",
+                "--output_dir", "out/0626_csl_VLP_SignCL",
+                "--training-refurbish", "True",
+                "--noise-rate", "0.15",
+                "--noise-type", "omit_last",
+                "--random-shuffle", "False",
+                "--decoder-type", "LLMD",
+                "--config", "./configs/config_gloss_free_csl.yaml"
+            ]
+        }
+    ]
+}

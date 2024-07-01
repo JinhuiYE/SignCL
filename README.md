@@ -1,5 +1,5 @@
 
-# SignCL: Improving Gloss-free Sign Language Translation by Reducing Representation Density
+# [SignCL: Improving Gloss-free Sign Language Translation by Reducing Representation Density](https://arxiv.org/abs/2405.14312)
 
 ## Overview
 
@@ -65,9 +65,15 @@ for epoch in range(num_epochs):
 ```
 
 ### B. Example for GFSLT-VLP:
-coming soon ***** 
+This example code was modified from [GFSLT-VLP GitHub](https://github.com/zhoubenjia/GFSLT-VLP). Please refer to their homepage to set up the environment and dataset.
 
+To execute, use the following command:
 
+```sh
+bash examples/scripts.sh
+```
+
+This script will execute the training and evaluation process, demonstrating how to integrate the `SignCL` loss function into the GFSLT-VLP framework. We also included our double-check results on the CSL-Daily dataset (see `example/GFSLT-VLP/out/*`).
 
 ## Citation
 

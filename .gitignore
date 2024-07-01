@@ -2,10 +2,21 @@ examples/GFSLT-VLP/out/0626_csl_VLP_SignCL/best_checkpoint5.pth
 examples/GFSLT-VLP/pretrain_models/*
 
 #data
-.examples/GFSLT-VLP/data/*
-.examples/GFSLT-VLP/out/*
-.examples/GFSLT-VLP/pretrain_models/*
-
+examples/GFSLT-VLP/data/*
+examples/GFSLT-VLP/out/bar/*
+examples/GFSLT-VLP/pretrain_models/*
+examples/GFSLT-VLP/out/bar/*/*checkpoint*
  
-examples/GFSLT-VLP/out/*
+examples/GFSLT-VLP/out/bar/*/out/*
 
+examples/GFSLT-VLP/configs/config_gloss_free_csl_char.yaml
+examples/GFSLT-VLP/out/*/output/*.txt
+examples/GFSLT-VLP/__pycache__
+examples/GFSLT-VLP/out/0626_csl_VLP_SignCL/*checkpoint*.pth
+examples/GFSLT-VLP/out/0630_GF_SignCL_warmup30/checkpoint102.pth
+
+# Ignore all checkpoint files in the specified directory
+examples/GFSLT-VLP/out/*/*checkpoint*.pth
+examples/GFSLT-VLP/out/0630_GF_SignCL_warmup30_
+
+examples/GFSLT-VLP/out/0630_GF_SignCL_/*
