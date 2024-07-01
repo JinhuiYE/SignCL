@@ -1,0 +1,11 @@
+examples/GFSLT-VLP/out/0626_csl_VLP_SignCL/best_checkpoint5.pth
+examples/GFSLT-VLP/pretrain_models/*
+
+#data
+.examples/GFSLT-VLP/data/*
+.examples/GFSLT-VLP/out/*
+.examples/GFSLT-VLP/pretrain_models/*
+
+ 
+examples/GFSLT-VLP/out/*
+
