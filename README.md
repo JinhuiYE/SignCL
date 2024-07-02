@@ -73,7 +73,7 @@ To execute, use the following command:
 bash examples/scripts.sh
 ```
 
-This script will execute the training and evaluation process, demonstrating how to integrate the `SignCL` loss function into the GFSLT-VLP framework. We also included our double-check `results` and `log.txt` on the CSL-Daily dataset (see `example/GFSLT-VLP/out/*`).
+This script will execute the training and evaluation process, demonstrating how to integrate the `SignCL` loss function into the GFSLT-VLP framework. We also included our self-reproduced `results` and `log.txt` on the CSL-Daily dataset (see `example/GFSLT-VLP/out/*`).
 
 ## Citation
 
