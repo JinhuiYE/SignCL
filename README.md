@@ -64,7 +64,7 @@ for epoch in range(num_epochs):
 
 ```
 
-### B. Example for GFSLT-VLP:
+### B. Usage example for GFSLT-VLP:
 This example code was modified from [GFSLT-VLP GitHub](https://github.com/zhoubenjia/GFSLT-VLP). Please refer to their homepage to set up the environment and dataset.
 
 To execute, use the following command:
