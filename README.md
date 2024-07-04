@@ -7,7 +7,7 @@
 to learn more discriminative feature representation. It draws the visual representations of sign gestures with identical semantics closer together and pushes those with different semantics farther apart by contrastive learning. This module can be integrated into both the pretraining and finetuning stages of a sign language translation model. Experiments demonstrate that the proposed SignCL can significantly reduce the representation density and improve performance across various translation
 frameworks. 
 
-### Representation Density and Performance Drop
+## Representation Density and Performance Drop
 We consistently observed a negative
 relationship between representation density and performance. Specifically, an increase in the representation density <span style="color:blue;">(+26%)</span> can result in a 
 performance drop <span style="color:red;">(-39%)</span> in BLEU score.
