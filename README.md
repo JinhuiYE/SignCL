@@ -3,7 +3,18 @@
 
 ## Overview
 
-`SignCL` is a PyTorch module designed to facilitate the integration of contrastive learning into sign language translation models. It operates by sampling positive and negative pairs of frames from a sequence and computing a contrastive loss based on the distances between these pairs. This module can be integrated into both the pretraining and finetuning stages of a sign language translation model.
+`SignCL` is a PyTorch module designed to encourage sign language translation models
+to learn more discriminative feature representation. It draws the visual representations of sign gestures with identical semantics closer together and pushes those with different semantics farther apart by contrastive learning. This module can be integrated into both the pretraining and finetuning stages of a sign language translation model. Experiments demonstrate that the proposed SignCL can significantly reduce the representation density and improve performance across various translation
+frameworks. 
+
+### Representation Density and Performance Drop
+
+
+<figure>
+  <img src="images/Motivation.pdf" width="85%">
+  <figcaption>An example of the representation density problem in sign language translation. The two images show the sign gestures for "RECIPROCATE" (blue dot) and "REVENGE" (orange dot). Although the two have opposite meanings, their visual representations are densely clustered together, as shown in the t-SNE visualization. The various colors in the visualization indicate sign gestures with different meanings.</figcaption>
+</figure>
+
 
 ## Installation
 
@@ -25,6 +36,9 @@ Here's a step-by-step guide to integrating SignCL into your sign language transl
 ```
 
 ### A. Usage example in your framework:
+
+<details>
+  <summary>Click to expand!</summary>
 
 ```python
 import torch
@@ -61,8 +75,10 @@ for epoch in range(num_epochs):
         optimizer.step()
         
         print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {total_loss.item()}")
-
 ```
+
+</details>
+
 
 ### B. Usage example for GFSLT-VLP:
 This example code was modified from [GFSLT-VLP GitHub](https://github.com/zhoubenjia/GFSLT-VLP). Please refer to their homepage to set up the environment and dataset.
