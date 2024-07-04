@@ -8,13 +8,16 @@ to learn more discriminative feature representation. It draws the visual represe
 frameworks. 
 
 ### Representation Density and Performance Drop
+We consistently observed a negative
+relationship between representation density and performance. Specifically, an increase in the representation density <span style="color:blue;">(+26%)</span> can result in a 
+performance drop <span style="color:red;">(-39%)</span>in BLEU score.
 
-
+<details>
+  <summary>Click to see figure!</summary>
 <figure>
-  <img src="images/Motivation.pdf" width="85%">
-  <figcaption>An example of the representation density problem in sign language translation. The two images show the sign gestures for "RECIPROCATE" (blue dot) and "REVENGE" (orange dot). Although the two have opposite meanings, their visual representations are densely clustered together, as shown in the t-SNE visualization. The various colors in the visualization indicate sign gestures with different meanings.</figcaption>
+  <img src="images/Density2SLT.png" width="95%">
 </figure>
-
+</details>
 
 ## Installation
 
@@ -90,6 +93,15 @@ bash examples/scripts.sh
 ```
 
 This script will execute the training and evaluation process, demonstrating how to integrate the `SignCL` loss function into the GFSLT-VLP framework. We also included our self-reproduced `results` and `log.txt` on the CSL-Daily dataset (see [link](examples/GFSLT-VLP/out/0630_GF_SignCL)).
+
+<details>
+  <summary>Click to expand results!</summary> 
+<figure>
+  <img src="images/maintable.png" width="95%">
+  <figcaption>Table 1: Enhancing GFSLT-VLP by reducing representation density on CSL-Daily test set.</figcaption>
+</figure>
+
+</details>
 
 ## Citation
 
