@@ -10,7 +10,7 @@ frameworks.
 ### Representation Density and Performance Drop
 We consistently observed a negative
 relationship between representation density and performance. Specifically, an increase in the representation density <span style="color:blue;">(+26%)</span> can result in a 
-performance drop <span style="color:red;">(-39%)</span>in BLEU score.
+performance drop <span style="color:red;">(-39%)</span> in BLEU score.
 
 <details>
   <summary>Click to see figure!</summary>
