@@ -2,10 +2,14 @@
 # [SignCL: Improving Gloss-free Sign Language Translation by Reducing Representation Density](https://arxiv.org/abs/2405.14312)
 
 ## Overview
+`SignCL` is a PyTorch module designed to enhance sign language translation models by encouraging the learning of more discriminative feature representations. It brings the visual representations of sign gestures with identical semantics closer together while pushing those with different semantics farther apart through contrastive learning. This module can be integrated into both the pretraining and finetuning stages of a sign language translation model. Experiments demonstrate that `SignCL` can significantly reduce representation density and improve performance across various translation frameworks.
 
-`SignCL` is a PyTorch module designed to encourage sign language translation models
-to learn more discriminative feature representation. It draws the visual representations of sign gestures with identical semantics closer together and pushes those with different semantics farther apart by contrastive learning. This module can be integrated into both the pretraining and finetuning stages of a sign language translation model. Experiments demonstrate that the proposed SignCL can significantly reduce the representation density and improve performance across various translation
-frameworks. 
+<figure>
+  <img src="images/Density.png" width="95%">
+  <!-- <figcaption>
+    The GFSLT-VLP model incorrectly translates “钢琴” (piano) as “电脑” (laptop) due to their representations being too close to others. `SignCL` effectively separates the representations of “电脑” (laptop) and “钢琴” (piano) in the feature space, enabling the accurate translation of “钢琴” (piano).
+  </figcaption> -->
+</figure>
 
 ## Representation Density and Performance Drop
 We consistently observed a negative
