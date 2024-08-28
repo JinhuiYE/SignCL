@@ -34,7 +34,7 @@ To use `SignCL`, ensure you have the following dependencies installed:
 - torchvision (optional, for dataset handling)
 - Other standard libraries (e.g., random, numpy)
 ## Checkpoints
-Checkpoints can be found in [here](https://drive.google.com/drive/folders/19GKEI1xWT5gU15QyltRodNWZFskpjVFj?usp=sharing)
+Checkpoints can be found in [here](https://drive.google.com/drive/folders/1JdxKylEmoaRpyqCYtb92cYgr2eDbiGJG?usp=sharing)
 
 ## Usage
 Here's a step-by-step guide to integrating SignCL into your sign language translation model.
