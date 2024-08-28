@@ -23,6 +23,8 @@ performance drop <span style="color:red;">(-39%)</span> in BLEU score.
 </figure>
 </details>
 
+
+
 ## Installation
 
 To use `SignCL`, ensure you have the following dependencies installed:
@@ -31,6 +33,8 @@ To use `SignCL`, ensure you have the following dependencies installed:
 - PyTorch
 - torchvision (optional, for dataset handling)
 - Other standard libraries (e.g., random, numpy)
+## Checkpoints
+Checkpoints can be found in [here](https://drive.google.com/drive/folders/19GKEI1xWT5gU15QyltRodNWZFskpjVFj?usp=sharing)
 
 ## Usage
 Here's a step-by-step guide to integrating SignCL into your sign language translation model.
