@@ -119,7 +119,7 @@ Note if you find this code work for your research, please cite the following pap
 @inproceedings{ye2024improving,
   title={Improving Gloss-free Sign Language Translation by Reducing Representation Density},
   author={Ye, Jinhui and Wang, Xing and Jiao, Wenxiang and Liang, Junwei and Xiong, Hui},
-  journal={arXiv preprint arXiv:2405.14312},
+  journal={NeurIPS},
   year={2024}
 }
 ```
